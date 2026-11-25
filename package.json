@@ -1,0 +1,21 @@
+{
+  "name": "dashen-seat",
+  "private": true,
+  "version": "0.1.0",
+  "description": "OWCS 2026 广州 · 3D 全景图绑座位（网易大神小游戏专区静态包）",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "check": "node scripts/check-dist.mjs",
+    "pack": "npm run build && npm run check && node scripts/pack.mjs"
+  },
+  "dependencies": {
+    "three": "0.169.0"
+  },
+  "devDependencies": {
+    "@types/three": "0.169.0",
+    "typescript": "5.9.3",
+    "vite": "8.3.1"
+  }
+}
